@@ -1,0 +1,326 @@
+/*общая стилизация для страницы*/
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.content {
+    max-width: 1024px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+:root {
+    --header-color: #1c1917;
+    --buttons-icons: #f97316;
+    --text-color: #57534e;
+}
+/*шапка профиля*/
+#background-image {
+    background-image: url(images/hero.jpg);
+    height: 800px;
+    background-size: cover;
+    background-position: center top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+.icon-school {
+    width: 100px;
+    padding-top: 10px;
+}
+.item-navigation {
+    display: flex;
+    flex-basis: 16%;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-navigation:hover {
+    color: var(--buttons-icons);
+}
+a {
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--header-color);
+    scroll-behavior: smooth;
+}
+.phone {
+    display: flex;
+    justify-content: flex-start; 
+    padding-top: 50px;
+}
+.icon-phone {
+    width: 20px;
+    padding-right: 10px;
+}
+.invitation {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: flex-start;
+}
+h1 {
+    color: var(--header-color);
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.invitation-text {
+    font-size: 20px;
+    color: var(--text-color);
+    padding-top: 50px;
+    font-weight: 300;
+    line-height: 22px;
+    max-width: 78%;
+}
+.button-trial-lesson {
+    background-color: var(--buttons-icons);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 50px;
+}
+.button-trial-lesson:hover {
+    color: var(--text-color)
+}
+/* секция преимуществ школы*/
+.section-headers {
+    color: var(--header-color);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+}
+.box-advanages {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.separate-boxes-advanages {
+    display: flex;
+    flex-basis: 33%;
+}
+.points-of-advantages {
+    background-color: #F5F5F4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+.square {
+    width: 30px;
+    height: 30px;
+    background: var(--buttons-icons);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+.icons-advantages {
+    color: white;
+    font-size: 26px;
+    font-weight: 150;
+    text-align: center;
+}
+.advantages {
+    text-align: center;
+    color:var(--header-color);
+    font-size: 18px;
+    margin-top: 20px;
+}
+.text-advatages {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.box-purpose-of-study {
+    display: flex;
+    align-content: space-evenly;
+    margin-top: 50px;
+    padding-bottom: 65px;
+}
+h3 {
+    color: var(--header-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.text-purpose-of-study {
+    font-size: 16px;
+    color: #44403c;
+    line-height: 20px;
+    margin-top: 5px;
+    padding-right: 15px;
+}
+.group-of-students {
+    object-fit: cover;
+    width: 500px;
+}
+/* секция  записи*/
+.recording-background {
+    background-color: #ffedd5;
+}
+.text-recording {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-top: 20px;
+    text-align: center;
+}
+.button-recording {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 140px;
+}
+.name-phone {
+    flex-basis: 26%;
+    background-color: white;
+    border: 1px solid #d6d3d1;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: left;
+    color: #78716c;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.name-phone:focus {
+    outline-style: double;
+}
+/*секция отзывов*/
+.reviews-beckground {
+    background-color: #fafaf9;
+}
+.box-reviews {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.students {
+    font-size: 18px;
+    color: var(--header-color);
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.student-feedback {
+    font-size: 16px;
+    color: #44403c;
+    font-weight: 300;
+    line-height: 20px;
+}
+hr {
+    color: #fafaf9;
+    margin-top: 30px;
+    border-width: 0.2;
+}
+/*абонементы*/
+.rates{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.box-rates {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    border: 0.2px solid #d6d3d1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+.subscription-period {
+    font-size: 18px;
+    color: var(--buttons-icons);
+    margin-top: 10px;
+}
+.cost {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+ul{
+    flex-grow: 1;
+}
+li {
+    font-size: 14px;
+    color: #78716c;
+    line-height: 24px;
+}
+.check {
+    font-size: 16px;
+    font-weight: 200;
+    color: #65a30d;
+    padding-right: 5px;
+}
+.record {
+    display: block;
+    font-size: 16px;
+    color: #ea580c;
+    background-color: #ffedd5;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.record:hover {
+    background-color: #f97316;
+    color: white;
+}
+/*контакты*/
+.footer-beckground {
+    background-color: #e7e5e4;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    color: #78716c;
+}
+.box-phone{
+    display: flex;
+}
+.grey-icon-phone {
+    width: 20px;
+    margin-right: 10px;
+}
+.social-network {
+     display: flex;
+     flex-basis: 9%;
+     justify-content: space-between;
+}
+.links-to-networks {
+    color: #78716c;
+}
+.instagram {
+    font-size: 24px;
+}
+.instagram:hover {
+    color: #f97316;
+}
+.twitter {
+    font-size: 23px;
+}
+.twitter:hover {
+    color: #f97316;
+}
+.facebook {
+    font-size: 23px;
+}
+.facebook:hover {
+    color:#ea580c;
+}
